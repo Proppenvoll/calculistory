@@ -1,0 +1,10 @@
+services:
+  calculistory:
+    image: docker.io/dunglas/frankenphp:php8.4
+    network_mode: host
+    container_name: calculistory-dev
+    command: sleep infinity
+    init: true
+    working_dir: /calculistory
+    volumes:
+      - .:/calculistory
